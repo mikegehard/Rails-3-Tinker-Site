@@ -10,7 +10,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110409175025) do
+ActiveRecord::Schema.define(:version => 20110410164449) do
+
+  create_table "article_tags", :force => true do |t|
+    t.integer  "article_id"
+    t.integer  "tag_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "article_time_tags", :force => true do |t|
     t.integer  "article_id"
