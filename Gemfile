@@ -12,6 +12,7 @@ gem 'haml', '3.0.25'
 group :development, :test do
   # include rspec-rails in both so we can get access to generators in development
   gem 'rspec-rails', '2.5.0'
-  gem 'capybara', '0.4.1.2'
+  # use edge so you get the nice cucumber-like dsl
+  gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'
   gem 'haml-rails', '0.3.4'
 end
