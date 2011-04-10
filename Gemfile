@@ -4,9 +4,12 @@ source 'http://rubygems.org'
 #gem 'arel',  :git => 'git://github.com/rails/arel.git'
 #gem 'rack',  :git => 'git://github.com/rack/rack.git'
 gem 'rails', '3.0.6'
+
 gem 'sqlite3', '1.3.3'
 
 gem 'haml', '3.0.25'
+
+gem 'simple_form', '1.3.1'
 
 
 group :development, :test do
