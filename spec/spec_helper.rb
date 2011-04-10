@@ -26,5 +26,5 @@ RSpec.configure do |config|
   config.use_transactional_fixtures = true
 
   #fixtures to load for every spec run
-#  config.global_fixtures = :articles, :tags
+  config.global_fixtures = :articles
 end

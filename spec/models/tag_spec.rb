@@ -16,4 +16,13 @@ describe Tag do
     subject.name = "a" * 41
     subject.should_not be_valid
   end
+
+  it "should not allow duplicate names" do
+    Tag.create!(:name => "Hot Stuff")
+    subject.name = "Hot Stuff"
+    subject.should_not be_valid
+
+    subject.name = "Really Cool"
+    subject.should be_valid
+  end
 end

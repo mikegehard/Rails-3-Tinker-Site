@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe ArticleTagsController do
-  fixtures :articles, :tags
 
   describe "#create" do
     before(:each) do
@@ -10,6 +9,7 @@ describe ArticleTagsController do
     describe "with valid tag name" do
       describe "when name matches an existing tag" do
         it "should not create a new tag" do
+          Tag.create!(:name => "Hot Stuff")
           expect do
             post :create, :article_id => @article.id, :tag => {:name => "Hot Stuff"}
           end.to_not change { Tag.count }
