@@ -1,0 +1,4 @@
+= simple_form_for :article_tag, :url => article_tags_path(@article) do |f|
+  = label_tag :tag_name, 'Name'
+  = text_field_tag 'tag[name]'
+  = f.submit :value => "Create Tag"

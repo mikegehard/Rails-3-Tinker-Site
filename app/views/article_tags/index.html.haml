@@ -1,0 +1,5 @@
+%p
+  =link_to "New Tag", new_article_tag_path(@article)
+
+%ul.tags
+  =render :partial => 'tag', :collection => @tags
