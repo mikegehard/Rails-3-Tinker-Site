@@ -8,10 +8,8 @@ class ArticleTagsController < ApplicationController
   end
 
   def create
-    @article = Article.find(params[:article_id])
-    @tag = Tag.find_or_initialize_by_name(params[:tag][:name])
-    @article_tag = ArticleTag.new(:article => @article, :tag => @tag)
-    if @article_tag.save
+    @article_tag_creator = ArticleTagCreator.new(params[:article_id],params[:tag][:name])
+    if @article_tag_creator.save
       redirect_to article_tags_path
     else
       render "new"
