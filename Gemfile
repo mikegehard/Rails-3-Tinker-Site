@@ -11,6 +11,8 @@ gem 'haml', '3.0.25'
 
 gem 'simple_form', '1.3.1'
 
+gem 'carrierwave', '0.5.3'
+
 
 group :development, :test do
   # include rspec-rails in both so we can get access to generators in development
@@ -19,4 +21,5 @@ group :development, :test do
   gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'
   gem 'haml-rails', '0.3.4'
   gem 'shoulda-matchers', '1.0.0.beta2'
+  gem 'launchy'
 end

@@ -1,0 +1,6 @@
+=simple_form_for @article, :html => {:multipart => true} do |f|
+  =f.input :headline
+  =f.label :icon
+  =f.file_field :icon
+
+  =f.submit
