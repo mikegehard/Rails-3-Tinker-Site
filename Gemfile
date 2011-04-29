@@ -18,7 +18,7 @@ gem 'uglifier'
 
 group :development, :test do
   # include rspec-rails in both so we can get access to generators in development
-  gem 'rspec-rails', '2.5.0'
+  gem 'rspec-rails', :git => 'git://github.com/rspec/rspec-rails.git'
   # use edge so you get the nice cucumber-like dsl
   gem 'capybara', '1.0.0.beta1'
   gem 'haml-rails', '0.3.4'
