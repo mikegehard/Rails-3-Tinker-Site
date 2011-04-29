@@ -7,7 +7,7 @@ describe ArticleTagCreator do
     @tag_name = "Hot Stuff"
     @creator = ArticleTagCreator.new(@article_id, @tag_name)
   end
-
+  let(:model_under_test) { ArticleTagCreator.new(@article_id, @tag_name) }
   it_behaves_like "ActiveModel"
 
   describe "#save" do
