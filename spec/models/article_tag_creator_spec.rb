@@ -11,15 +11,6 @@ describe ArticleTagCreator do
   it_behaves_like "ActiveModel"
 
   describe "#save" do
-    describe "if ArticleTag save fails" do
-      it "should not create a Tag" do
-        pending
-        double_article_tag = double('article_tag')
-        double_article_tag.stub(:save) { false }
-        ArticleTag.stub(:new) { double_article_tag }
-        expect { @creator.save }.to_not change { Tag.count }
-      end
-    end
     describe "with existing article and tag name that" do
       describe "is valid" do
         it "should return true" do
