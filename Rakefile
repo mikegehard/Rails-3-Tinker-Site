@@ -5,3 +5,5 @@
 require File.expand_path('../config/application', __FILE__)
 
 TinkerSite::Application.load_tasks
+
+task :default => "jasmine:ci"

@@ -24,4 +24,5 @@ group :development, :test do
   gem 'haml-rails', '0.3.4'
   gem 'shoulda-matchers', '1.0.0.beta2'
   gem 'launchy'
+  gem "jasmine", "1.0.2.0"
 end
