@@ -22,4 +22,6 @@ group :development, :test do
   gem 'shoulda-matchers', '1.0.0.beta2'
   gem 'launchy'
   gem "jasmine", "1.0.2.0"
+  gem 'guard', '0.3.4'
+  gem 'guard-coffeescript', '0.2.2'
 end
