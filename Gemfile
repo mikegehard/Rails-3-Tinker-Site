@@ -1,9 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails',     :git => 'git://github.com/rails/rails.git'
-gem 'arel',      :git => 'git://github.com/rails/arel.git'
-gem 'rack',      :git => 'git://github.com/rack/rack.git'
-gem 'sprockets', :git => 'git://github.com/sstephenson/sprockets.git'
+gem 'rails', '3.1.0.beta1'
 
 gem 'sqlite3', '1.3.3'
 gem 'haml', '3.0.25'
