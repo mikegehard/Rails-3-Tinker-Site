@@ -4,3 +4,4 @@ log/*.log
 tmp/
 public/images/article
 .sass-cache/
+config/fog_credentials.yml

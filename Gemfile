@@ -7,7 +7,7 @@ gem 'sqlite3', '1.3.3'
 gem 'haml', '3.0.25'
 gem 'simple_form', '1.3.1'
 gem 'carrierwave', '0.5.4'
-gem 'fog', '0.8.1'
+gem 'fog', '0.8.2'
 
 # Asset template engines
 gem 'sass', '3.1.1'
