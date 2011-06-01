@@ -19,15 +19,6 @@ ActiveRecord::Schema.define(:version => 20110411024619) do
     t.datetime "updated_at"
   end
 
-  create_table "article_time_tags", :force => true do |t|
-    t.integer  "article_id"
-    t.integer  "tag_id"
-    t.datetime "start_time"
-    t.datetime "stop_time"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "articles", :force => true do |t|
     t.string   "headline"
     t.datetime "created_at"
