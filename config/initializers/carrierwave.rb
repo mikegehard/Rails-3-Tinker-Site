@@ -24,7 +24,7 @@ Fog.credentials_path = Rails.root.join('config/fog_credentials.yml')
 
 CarrierWave.configure do |config|
   config.fog_credentials = {
-      :provider => 'AWS',
+      :provider => 'AWS'
   }
   config.fog_directory = "mikeg-bucket-test" # required
 end
