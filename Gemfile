@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.0.rc1'
+#gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'rake', '0.8.7'
 gem 'sqlite3', '1.3.3'
@@ -26,4 +27,5 @@ group :development, :test do
   gem "jasmine", "1.0.2.0"
   gem 'guard', '0.3.4'
   gem 'guard-coffeescript', '0.2.2'
+  gem 'passenger', '3.0.7'
 end
