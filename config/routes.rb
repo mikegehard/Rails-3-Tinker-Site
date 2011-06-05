@@ -3,6 +3,10 @@ TinkerSite::Application.routes.draw do
     resources :tags, :controller => 'article_tags'
   end
 
+  root :to => 'articles#index'
+
+  resources :todos, only: :index
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
