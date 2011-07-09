@@ -11,9 +11,11 @@ gem 'carrierwave', '0.5.4'
 gem 'fog', '0.8.2'
 
 # Asset template engines
-gem 'sass', '~> 3.1'
+gem 'sass-rails', "~> 3.1.0.rc"
 gem 'coffee-script', '~> 2.0'
 gem 'uglifier', '~> 0.5'
+
+gem 'jquery-rails'
 
 
 group :development, :test do
@@ -28,4 +30,5 @@ group :development, :test do
   gem 'guard', '0.3.4'
   gem 'guard-coffeescript', '0.2.2'
   gem 'passenger', '3.0.7'
+  gem 'rb-fsevent', '0.4.1'
 end
