@@ -1,1 +1,1 @@
-rvm gemset use tinker_site --create
+rvm use 1.9.3@tinker_site --create
