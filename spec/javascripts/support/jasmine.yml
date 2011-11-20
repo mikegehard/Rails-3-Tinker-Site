@@ -1,13 +1,3 @@
-# src_dir
-#
-# Source directory path. Your src_files must be returned relative to this path. Will use root if left blank.
-# Default: project root
-#
-# EXAMPLE:
-#
-# src_dir: public
-#
-
 # src_files
 #
 # Return an array of filepaths relative to src_dir to include before jasmine specs.
@@ -20,11 +10,13 @@
 #   - lib/source2.js
 #   - dist/**/*.js
 #
-
-src_dir: public/javascripts/compiled
-
 src_files:
-  - **/*.js
+  - public/javascripts/prototype.js
+  - public/javascripts/effects.js
+  - public/javascripts/controls.js
+  - public/javascripts/dragdrop.js
+  - public/javascripts/application.js
+  - public/javascripts/**/*.js
 
 # stylesheets
 #
@@ -53,6 +45,30 @@ stylesheets:
 helpers:
   - helpers/**/*.js
 
+# spec_files
+#
+# Return an array of filepaths relative to spec_dir to include.
+# Default: ["**/*[sS]pec.js"]
+#
+# EXAMPLE:
+#
+# spec_files:
+#   - **/*[sS]pec.js
+#
+spec_files:
+  - '**/*[sS]pec.js'
+
+# src_dir
+#
+# Source directory path. Your src_files must be returned relative to this path. Will use root if left blank.
+# Default: project root
+#
+# EXAMPLE:
+#
+# src_dir: public
+#
+src_dir:
+
 # spec_dir
 #
 # Spec directory path. Your spec_files must be returned relative to this path.
@@ -62,11 +78,4 @@ helpers:
 #
 # spec_dir: spec/javascripts
 #
-
-spec_dir: spec/javascripts/compiled
-spec_files:
-  - **/*_spec.js
-
-
-
-
+spec_dir: spec/javascripts
